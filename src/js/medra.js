@@ -1,82 +1,52 @@
-/* (c) inioHD 2021 | Medra Template by: https://iniohd.github.io | MIT License */
-(function($){
-    'use strict';
+/*(c) iniohd 2023 | Medra Template by: https://iniohd.github.io | MIT License */
 
-    $(document).ready(function(){
-        //DOM loaded
+const contactForm = document.getElementById("contact-form")
+if (contactForm) {
+    contactForm.addEventListener("submit", function(e) {
+        e.preventDefault()
+        let totalInvalid = 0
+        const inputs = contactForm.querySelectorAll("form#contact-form input[required], form#contact-form textarea[required]"),
+        regexName = /([^A-Za-z0-9\-\_])/gi,
+        regexMail = /^([A-Za-z0-9\-\_\.]+)\@([A-Za-z0-9\_\-]+)\.([A-Za-z0-9\.]+)$/gi,
+        regexMsg = /[A-Za-z]/gi
 
-        $("form#contact-form button[type='submit']").on("click", function(){
-            var a, b, c, d, vMail, vName, vMsg, totalInvalid = 0;
-
-            //Form's input element that is current receiving input data
-            a = $(this);
-
-            //Get all required form inputs
-            b = $("form#contact-form input[required], form#contact-form textarea[required]");
-
-            //Create the patterns that validate each input type
-            vName = /([^A-Za-z0-9\-\_])/gi;
-            vMail = /^([A-Za-z0-9\-\_\.]+)\@([A-Za-z0-9\_\-]+)\.([A-Za-z0-9\.]+)$/gi;
-            vMsg = /[A-Za-z]/gi;
-
-            b.each(function(){
-                let inputName = ($(this).attr("id") || $(this).attr("name") || "").toLowerCase(),
-                inputValue = $(this).val();
-
-                if(inputName === "name"){
-                    //Validate name input
-
-                    if(inputValue.length < 3 || vName.test(inputValue)){
-                        //The typed name is invalid (It luckly includes invalid character).
-
-                        $(this)
-                        .removeClass("border-success")
-                        .addClass("border-danger");
-
-                        totalInvalid++;
-                    }else{
-                        $(this)
-                        .removeClass("border-danger")
-                        .addClass("border-success");
-                    }
-                }else if(inputName === "email" || inputName === "mail"){
-                    //Validate e-mail input
-
-                    if(!vMail.test(inputValue)){
-                        //The typed e-mail is invalid
-
-                        $(this)
-                        .removeClass("border-success")
-                        .addClass("border-danger");
-
-                        totalInvalid++;
-                    }else{
-                        $(this)
-                        .removeClass("border-danger")
-                        .addClass("border-success");
-                    }
-                }else if(inputName === "msg"){
-                    //Validate Message textarea input
-
-                    if(!vMsg.test(inputValue)){
-                        //Contact textarea is invalid (luckly is empty)
-                        
-                        $(this)
-                        .removeClass("border-success")
-                        .addClass("border-danger");
-
-                        totalInvalid++;
-                    }else{
-                        $(this)
-                        .removeClass("border-danger")
-                        .addClass("border-success");
-                    }
+        for (let input of inputs) {
+            let inputName = input.id || input.name || ""
+            inputName = inputName.toLowerCase()
+            if (inputName === "name") {
+                if (input.value.length < 3 || regexName.test(input.value)) {
+                    input.classList.remove("border-success")
+                    input.classList.add("border-danger");
+                    totalInvalid++;
+                } else {
+                    input.classList.remove("border-danger")
+                    input.classList.add("border-success");
                 }
-            });
-
-            //Do we have at least one invalid input? If yes, return false.
-            if(totalInvalid)
-                return false;
-        });
-    });
-})(jQuery)
+            } else if (inputName === "email" || inputName === "mail") {
+                if (!regexMail.test(input.value)) {
+                    input.classList.remove("border-success")
+                    input.classList.add("border-danger");
+                    totalInvalid++;
+                } else {
+                    input.classList.remove("border-danger")
+                    input.classList.add("border-success");
+                }
+            } else if (inputName === "msg") {
+                if (!regexMsg.test(input.value)) {
+                    input.classList.remove("border-success")
+                    input.classList.add("border-danger");
+                    totalInvalid++;
+                } else {
+                    input.classList.remove("border-danger")
+                    input.classList.add("border-success");
+                }
+            }
+        }
+    
+        //Do we have at least one invalid input? If yes, return false.
+        if (totalInvalid > 0) {
+            return false;
+        }
+        contactForm.submit()
+    })
+}
