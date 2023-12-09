@@ -1,2 +1,2 @@
 # medra
-Elegant &amp; modern HTML Template for multi purpose
+A free multi purpose, elegant and modern HTML Template for your next project.
