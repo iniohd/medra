@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Home - Medra Theme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="styles/medra.css" />
+    <link rel="stylesheet" href="styles/font-awesome/4.7.0/css/font-awesome.min.css" /> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="container-fluid m-0 p-0">
+        <section class="secondary-nav-container">
+            <div class="container-md">
+                <nav class="navbar navbar-expand navbar-light mr-auto p-0">
+                    <div class="navbar-nav h-100">
+                        <a href="#" class="nav-link p-1 px-2">about</a>
+                        <a href="contact.html" class="nav-link p-1 px-2">contacts</a>
+                    </div>
+                    <div class="d-flex ml-auto h-100">
+                        <div class="position-relative d-inline-block">
+                            <a href="#" class="btn btn-transparent border-0 shadow-none p-1 px-2 text-secondary collapse-toggle" data-toggle="collapse" data-target="#search-bar-container" aria-expanded="false">
+                                <span class="fa fa-search"></span>
+                            </a>
+                        </div>
+                        <div class="dropdown position-relative d-inline-block user-meta-container"><!--header-user-meta-->
+                            <a href="#" class="btn btn-transparent border-0 shadow-none dropdown-toggle p-1 px-2 text-secondary" data-toggle="dropdown"><span class="fa fa-user"></span></a>
+                            <div class="dropdown-menu p-0 text-muted shadow-sm med-animation-dropdown-menu med-animation-normal">
+                                <a href="#" class="dropdown-item px-1 bg-light med-bg-transition">login</a>
+                                <a href="#" class="dropdown-item px-1 bg-light med-bg-transition">sigup</a>
+                            </div>
+                        </div><!--.header-user-meta-->
+                    </div>
+                </nav>
+                <div class="collapse search-bar-container" id="search-bar-container" aria-label="collapse">
+                    <form class="py-4">
+                        <div class="position-relative">
+                            <input type="search" class="form-control border-info rounded-pill shadow-none h-100 search-bar med-bg-transition med-transition-ease-out" value="" placeholder="Search..." />
+                            <button type="submit" class="btn p-1 shadow-none border-0 position-absolute h-100 text-muted search-bar-icon">
+                                <span class="fa fa-search fa-lg"></span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="container-md p-0 brand-container">
+            <div class="py-4 px-2 text-center site-brand">
+                <a href="#"><span class="text-secondary rounded-pill py-1 px-3" style="background:#eee;font-size:2em;font-weight:bold;">SiteLogo</span></a>
+            </div>
+        </section>
+        <section class="container-md navbar-container">
+            <nav class="navbar navbar-expand-lg navbar-light main-navbar">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".main-navbar-nav"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse main-navbar-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a href="index.html" class="nav-link">home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">curses</a>
+                            <ul class="dropdown-menu shadow-sm p-0 m-0 med-animation-dropdown-menu med-animation-normal">
+                                <li class="dropdown-item"><a href="#" class="nav-link">web development</a></li>
+                                <li class="dropdown-item"><a href="#" class="nav-link">software development</a></li>
+                                <li class="dropdown-item"><a href="#" class="nav-link">game development</a></li>
+                                <li class="dropdown-item"><a href="#" class="nav-link">graphic design</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">online curses</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">events</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">calendar</a></li>
+                        <li class="nav-item"><a href="posts.html" class="nav-link">posts</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <main class="container-fluid d-inline-block m-0 p-0 main-site">
+        <section class="main-section"><!--main-section-->
+            <section class="jumbotron-fluid position-relative site-intro-banner-container"><!--section-container-->
+                <section class="container-md px-4 px-md-0 text-light site-intro-banner">
+                    <div class="position-relative site-intro-banner-text">
+                        <h1 class="m-0 p-0">Education is the future</h1>
+                        <hr class="my-3 border-0">
+                        <p class="lead m-0 p-0">We believe that, strong education is the opportunite for brighter future!</p>
+                        <a href="#" class="btn btn-lg btn-outline-info my-3">start now &raquo;</a>
+                    </div>
+                </section><!--.section-container-->
+            </section><!--.section-->
+            <section class="site-courses py-4 m-0"><!--section-->
+                <section class="container-md"><!---section-container-->
+                    <h4 class="my-3 p-0">Online Courses</h4>
+                    <div class="row row-cols-1 row-cols-md-3">
+                        <div class="col py-3">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-header">
+                                    <h5 class="card-title">Web Development</h5>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong>Languages</strong>: HTML, CSS, Javascript, PHP or Python</li>
+                                    <li class="list-group-item"><strong>Frameworks</strong>: Bootstrap, jQuery and Reactjs</li>
+                                    <li class="list-group-item"><strong>Length</strong>: ~40 hours</li>
+                                    <li class="list-group-item"><strong>Price</strong>: $300</li>
+                                </ul>
+                                <div class="card-footer">
+                                    <a href="#" class="btn btn-info shadow-none w-100">Apply Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col py-3">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-header">
+                                    <h5 class="card-title">Game Development</h5>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong>Languages</strong>: C++ or C# and Python</li>
+                                    <li class="list-group-item"><strong>Engines</strong>: Unreal or Unity</li>
+                                    <li class="list-group-item"><strong>Length</strong>: ~80 hours</li>
+                                    <li class="list-group-item"><strong>Price</strong>: $400</li>
+                                </ul>
+                                <div class="card-footer">
+                                    <a href="#" class="btn btn-info shadow-none w-100">Apply Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col py-3">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-header">
+                                    <h5 class="card-title">Graphic Design</h5>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong>Softwares</strong>: Adobe Photoshop, Adobe Premier, Adobe XD</li>
+                                    <li class="list-group-item"><strong>Length</strong>: 30 hours</li>
+                                    <li class="list-group-item"><strong>Price</strong>: $350</li>
+                                </ul>
+                                <div class="card-footer">
+                                    <a href="#" class="btn btn-info shadow-none w-100">Apply Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!--.section-container-->
+            </section><!--.section-->
+            <section class="site-intro-info"><!--section-->
+                <section class="container-md py-4"><!--section-container-->
+                    <div class="row row-cols-md-3 row-cols-1 text-center">
+                        <div class="col py-3">
+                            <div class="card h-100 bg-info text-white">
+                                <div class="card-header py-4">
+                                    <span class="fa fa-pencil fa-2x"></span>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Qualified Profissionals</h5>
+                                    <p class="card-text lead">Our instuition has high qualified profissionals,
+                                        that work closely with our students in order to insure that they
+                                        understand every subject they learn.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col py-3">
+                            <div class="card h-100 bg-info text-white">
+                                <div class="card-header py-4">
+                                    <span class="fa fa-group fa-2x"></span>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Inclusion</h5>
+                                    <p class="card-text lead">All people deserves opportunities in their lives, in an
+                                        equal form. No matter your genre, age, religion, social
+                                        status, etc.
+                                    </p>
+                                    <p class="card-text lead">We bilieve that never is to late to start
+                                        an career. As long you bilieve in your self</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col py-3">
+                            <div class="card h-100 bg-info text-white">
+                                <div class="card-header py-4">
+                                    <span class="fa fa-flag fa-2x"></span>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Study from everywhere at any time</h5>
+                                    <p class="card-text lead">We value time and we respect our students.
+                                        That's why we provide some of our courses online that are available
+                                        at any time and from everywhere.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!--.section-container-->
+            </section><!--.section-->
+        </section><!--.main-section-->
+    </main>
+    <footer class="position-relative site-footer"><!--site-footer-->
+        <section class="container-md">
+            <section class="py-5"><!--section-->
+                <div class="row">
+                    <div class="d-block col-md-4 py-2 py-md-0 footer-social"><!--footer-social.col-->
+                        <div class="d-table mx-auto mx-md-0 clearfix">
+                            <a href="#"><span class="fa fa-facebook"></span></a>
+                            <a href="#"><span class="fa fa-instagram"></span></a>
+                            <a href="#"><span class="fa fa-twitter"></span></a>
+                            <a href="#"><span class="fa fa-youtube"></span></a>
+                        </div>
+                    </div><!--.footer-social.col-->
+                    <div class="col-md-8 px-0 px-md-3 pt-4 pt-md-0"><!--col-->
+                        <div class="row text-center text-muted">
+                            <div class="col-sm-6">
+                                <h5>Company</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Sitemap</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <h5>Column</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Terms</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--.col-->
+                </div>
+            </section><!--.section-->
+            <section class="p-2 pb-5 copyright-section"><!--copyright-section-->
+                <div class="row">
+                    <div class="col-6 text-left text-muted">
+                        <div class="template-credits">
+                            <small class="m-0 p-0">Template by <a href="https://iniohd.github.com" class="text-muted" target="_blank">inioHD</a></small>
+                        </div>
+                    </div>
+                    <div class="col-6 text-right text-muted">
+                        <div class="site-copyright">
+                            <small class="m-0 p-0">(c) Medra 2021</small>
+                        </div>
+                    </div>
+                </div>
+            </section><!--.copyright-section-->
+        </section>
+    </footer><!--.site-footer-->
+    <script src="../4.6.0/js/bootstrap.min.js"></script>
+    <script src="../4.6.0/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/medra.js"></script>
+</body>
+</html>
